@@ -1,0 +1,51 @@
+# Core training loop / config
+lightning==2.1.3              # >=2.2.0 requires Python >=3.10
+hydra-core==1.3.2
+hydra-colorlog==1.2.0
+hydra-optuna-sweeper==1.2.0
+omegaconf==2.3.0
+rootutils==1.0.7
+
+# Logging
+wandb==0.15.11
+tensorboard==2.14.1
+tensorboard-data-server==0.7.1
+
+# Diffusion / Transformers
+diffusers==0.25.0
+transformers==4.28.1
+accelerate==0.23.0
+einops==0.6.1
+
+# Vision + utils
+opencv-python-headless==4.7.0.72
+numpy==1.26.4
+protobuf==3.20.3
+wrapt==1.15.0
+google==3.0.0
+googleapis-common-protos==1.59.0
+timm==0.9.7
+kornia==0.7.0
+matplotlib==3.9.4              # Last version before 3.10 (requires Python >=3.10)
+scikit-learn==1.3.2            # Newest Py39-compatible version
+imageio[ffmpeg]==2.31.6        # Compatible version
+imageio[pyav]==2.31.6          # Match the same
+nerfacc==0.5.3
+jaxtyping==0.2.36              # Last version before 3.10+ requirement
+plyfile==0.8.1
+
+# Geometry / eval
+PyMCubes==0.1.6
+xatlas==0.0.10
+mesh2sdf==1.1.0
+transforms3d==0.4.2
+
+# CUDA extensions (install separately from source with H100 fix)
+# git+https://github.com/NVlabs/nvdiffrast.git@v0.3.3
+# git+https://github.com/ashawkey/diff-gaussian-rasterization.git
+# git+https://gitlab.inria.fr/bkerbl/simple-knn.git
+
+
+
+
+# pip install git+https://github.com/ashawkey/kiuikit.git
